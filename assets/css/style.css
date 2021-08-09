@@ -2,6 +2,8 @@
 :root {
   --espacamento: 16px;
   --cor-primaria: rgba(255,0,0,.5);
+  --cor-secundaria: rgba(0,0,255,.5);
+  --cor-secundaria-light: rgba(0,0,255,.15);
 }
 
 * {
@@ -17,16 +19,40 @@ footer {
   padding: var(--espacamento);
 }
 
-h1,
-h2 {
+h1 {
   background-color: var(--cor-primaria);
-  /* margin-top: 32px;
-  margin-right: 24px;
-  margin-bottom: 16px;
-  margin-left: 24px; */
-  /* margin: 32px 24px 16px; */
-  /* margin: 32px 24px; */
-  margin: 24px 0 12px auto;
-  padding: 16px;
-  width: 640px;
+  font-family: 'Quicksand', sans-serif;
+  margin: var(--espacamento) auto;
+  padding: var(--espacamento);
+  text-align: center;
+  width: 50%;
+}
+
+h2 {
+  background-color: var(--cor-secundaria);
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  margin: var(--espacamento) auto;
+  padding: var(--espacamento);
+  width: 100%;
+}
+
+section {
+  background-color: var(--cor-secundaria-light);
+}
+
+header,
+footer {
+  background-color: var(--cor-secundaria-light);
+}
+
+.btn {
+  background-color: var(--cor-primaria);
+  border: 1px solid black;
+  border-radius: 0 calc(var(--espacamento)/4);
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  padding: calc(var(--espacamento)/4) calc(var(--espacamento)/2);
+  text-decoration: none;
 }
