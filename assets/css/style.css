@@ -1,149 +1,103 @@
-/* RESET (ou Rezétti) */
-:root {
-  --espacamento: 16px;
-  --cor-primaria: rgba(255, 0, 0, .5);
-  --cor-secundaria: rgba(0, 0, 255, .5);
-  --cor-secundaria-light: rgba(0, 0, 255, .15);
-  --fonte-primaria: 'Quicksand', sans-serif;
-}
-
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  /* border: 1px dashed red; */
+  /* background-color: rgba(255, 0, 0, 0.1); */
 }
 
-body,
-header,
-main,
-footer {
-  padding: var(--espacamento);
-}
-
-h1 {
-  margin: var(--espacamento) auto;
-  padding: var(--espacamento);
-  width: 50%;
-}
-
-h2 {
-  margin: var(--espacamento) auto;
-  padding: var(--espacamento);
-  width: 100%;
-}
-
-header,
-footer {
-  background-color: var(--cor-secundaria-light);
-}
-
-.cta {
-  background-color: var(--cor-primaria);
-  color: black;
-  font-family: var(--fonte-primaria);
-  font-weight: bolder;
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
-.cta--intermediario {
-  margin: calc(var(--espacamento)*2) auto;
+body {
+  /* FLEX CONTAINER */
+  display: flex;
+  flex-flow: column nowrap;
 }
-
-.cta--intermediario {
-  margin: calc(var(--espacamento)*2) auto;
-  height: 50vh;
-  background-image: url('https://www.america-retail.com/static//2020/09/farmacias-1.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#banner{
-  background-color: #dce5e2;
-  background-image: url("https://www.america-retail.com/static//2020/09/farmacias-1.jpg");
-  background-attachment: fixed;
-  height: 432px;
-}
-
-.btn {
-  border: 1px solid black;
-  border-radius: 0 calc(var(--espacamento)/4);
-  display: block;
-  margin: var(--espacamento) auto;
-  padding: calc(var(--espacamento)/4) calc(var(--espacamento)/2);
-  text-decoration: none;
-  width: max-content;
-}
-
-#logoTopo {
-  border: 3px solid black;
-  border-radius: 50%;
-}
-
-#logoTopo img {
-  transition: transform .6s ease-out;
-}
-
-#logoTopo:hover img {
-  transform: rotateZ(360deg);
-}
-
-[href*="promo"] img {
-  width: 100%;
-}
-
-.categoria {
-  background-color: var(--cor-secundaria-light);
-}
-
-.categoria__produto {
-  border-radius: 4px;
-}
-
-.categoria__produto--promocao {
-  border: 4px solid var(--cor-secundaria);
-}
-
 
 header {
-  align-items: center;
+  /* FLEX CONTAINER */
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: nowrap; */
   flex-flow: row nowrap;
-  justify-content: space-between;
+  padding: 16px;
 }
 
-header > a {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: 80px;
+header a {
+  /* FLEX ITEM */
+  flex: 0 1 80px;
 }
 
 header nav {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
+  /* FLEX ITEM */
+  flex: 1 0 auto;
+  /* FLEX CONTAINER */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-ul {
+header nav ul {
+  /* FLEX ITEM */
+  flex: 0 0 75%;
+  ;
+  /* FLEX CONTAINER */
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   list-style: none;
 }
 
-li {
+main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main section {
+  background-color: skyblue;
   padding: 16px;
 }
 
-.categoria {
-  align-items: stretch;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+main section article img {
+  display: block;
+  margin: 16px auto;
 }
-.categoria h2.cta {
-  /* flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 100%; */
-  flex: 1 0 100%;
+
+.banner-middle {
+  margin: 32px 0;
+}
+
+.btn {
+  border: 1px solid black;
+  background-color: #fff;
+  display: block;
+  font-weight: bold;
+  margin: 8px auto;
+  padding: 6px 16px;
+}
+
+footer {
+  padding: 32px;
+}
+
+footer p {
+  text-align: center;
+}
+
+main section {
+  background-color: rgb(183, 235, 135);
+}
+
+@media only screen and (min-width: 768px) {
+  main section {
+    background-color: rgb(170, 135, 235);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main section {
+    background-color: rgb(235, 163, 135);
+  }
 }
