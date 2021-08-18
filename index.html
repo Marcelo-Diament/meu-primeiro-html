@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Primeiro HTML</title>
   <meta name="description" content="Prática 01 do módulo de HTML e CSS">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     strong {
@@ -17,64 +20,79 @@
 
 <body>
   <header>
-    <a href="/" rel="noopener noreferrer" target="_blank" title="Ir para homepage">
-      <img src="https://mk0leanfrontierqpi7o.kinstacdn.com/wp-content/uploads/2018/12/logo-placeholder-png.png" alt="Site Farmácia e Cia." width="80">
+    <a id="logoTopo" href="/" rel="noopener noreferrer" target="_blank" title="Ir para homepage">
+      <img src="https://mk0leanfrontierqpi7o.kinstacdn.com/wp-content/uploads/2018/12/logo-placeholder-png.png" alt="Site Farmácia e Cia." width="80" height="auto">
     </a>
     <nav>
       <ul>
-          <li>
-              <a href="sobre.html" title="Saiba mais sobre a Farmácia e Cia.">Sobre</a>
-          </li>
-          <li>
-              <a href="contato.html" title="Entre em contato com a Farmácia e Cia.">Contato</a>
-          </li>
+        <li>
+          <a href="sobre.html" title="Saiba mais sobre a Farmácia e Cia.">Sobre</a>
+        </li>
+        <li>
+          <a href="contato.html" title="Entre em contato com a Farmácia e Cia.">Contato</a>
+        </li>
       </ul>
-  </nav>
+    </nav>
   </header>
 
   <main>
     <h1>FARMÁCIA E CIA.</h1>
-    <section>
+    <section class="categoria">
       <h2>BELEZA</h2>
-
-      <article>
+      <article class="categoria__produto">
         <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
         <h3>Máquina de Cabelo</h3>
         <p>Essa <strong>maquininha de cabelo</strong> está apenas <b>R$ 5,00</b>. Detalhe: ela <strong>não machuca seu couro cabeludo</strong>.<a href="#top">VOLTAR PARA TOPO</a>. <span>Estou dentro de um span.</span></p>
+        <button class="btn">Comprar</button>
       </article>
 
-      <article>
+
+      <article class="categoria__produto">
         <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
         <h3>Peruca</h3>
         <p>Essa <strong>peruca</strong> está apenas <b>R$ 15,00</b>. Detalhe: ela <strong>nem parece de mentira</strong>.</p>
+        <button class="btn">Comprar</button>
       </article>
 
-      <article>
+      <article class="categoria__produto">
         <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
         <h3>Unhas Postiças</h3>
         <p>Essa <strong>unha postiça</strong> está apenas <b>R$ 1,00</b>. Detalhe: ela é tão <strong>realista</strong> que já vem encravada.</p>
+        <button class="btn">Comprar</button>
       </article>
     </section>
 
-    <section>
+    <section class="banner-middle">
+      <a href="/promocoes" title="Saiba mais">
+        <div>
+          <h3>PROMOÇÃO!!!</h3>
+          <button class="btn">Comprar</button>
+        </div>
+      </a>
+    </section>
+
+    <section class="categoria">
       <h2>SAÚDE</h2>
 
-      <article>
+      <article class="categoria__produto categoria__produto--promocao">
         <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
         <h3>Vitamina Omega 2</h3>
         <p>Essa <strong>vitamina Omega 2</strong> está apenas <b>R$ 500,00</b>. Detalhe: é <strong>Omega 2 do bom</strong>.</p>
+        <button class="btn">Comprar</button>
       </article>
 
-      <article>
+      <article class="categoria__produto">
         <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
         <h3>Iogurteira Top Therme</h3>
         <p>Essa <strong>Iogurteira Top Therme</strong> está apenas <b>R$ 15,00</b>. Detalhe: ela faz um <strong>iogurte delicioso</strong>.</p>
+        <button class="btn">Comprar</button>
       </article>
 
-      <article>
+      <article class="categoria__produto">
         <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
         <h3>Pente para Careca</h3>
         <p>Esse <strong>pente pra careca</strong> está apenas <b>R$ 10,00</b>. Detalhe: ele <strong>deixa seu cabelo tipo Slash</strong>.</p>
+        <button class="btn">Comprar</button>
       </article>
     </section>
   </main>

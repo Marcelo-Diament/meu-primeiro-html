@@ -12,10 +12,9 @@ h3 {
   text-align: center;
 }
 
-section:not(.categoria) h2{
+section:not(.categoria) h2 {
   margin: 32px auto 16px;
 }
-
 
 body {
   /* FLEX CONTAINER */
@@ -108,10 +107,9 @@ footer p {
     flex: 1 0 100%;
   }
 
-  section:not(.categoria) > img{
+  section:not(.categoria) > img {
     max-width: 300px;
     height: auto;
-    margin: auto;
   }
 
   article.categoria__produto {
