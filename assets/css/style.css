@@ -108,6 +108,31 @@ main section article img {
   order: -1;
 }
 
+.categoria__produto p {
+  padding: 16px;
+  text-align: justify;
+}
+
+[class$="--promocao"] {
+  position: relative;
+}
+
+[class$="--promocao"]::before {
+  background-color: black;
+  border-radius: 0 8px 0 8px;
+  color: white;
+  content: attr(data-badge);
+  /* content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBZRTdp8cZ2NUAFDRyMNk7roFvNLRvG2cV8Q&usqp=CAU'); */
+  display: block;
+  font-weight: bold;
+  left: 16px;
+  margin: 0 auto;
+  padding: 6px 12px;
+  position: absolute;
+  top: 24px;
+  width: fit-content;
+}
+
 .btn {
   border: 1px solid black;
   background-color: #fff;
