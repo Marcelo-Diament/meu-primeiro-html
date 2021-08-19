@@ -73,6 +73,23 @@ main section article img {
   margin: 16px auto;
 }
 
+.institucional {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.institucional .institucional__header,
+.institucional .institucional__content {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.institucional .institucional__content {
+  padding: 16px;
+}
+
 .banner-middle {
   margin: 32px 0;
   order: -1;
@@ -103,8 +120,12 @@ footer p {
     justify-content: flex-start;
   }
 
-  main section h2 {
+  main section.categoria h2 {
     flex: 1 0 100%;
+  }
+
+  .categoria {
+    margin: 32px auto 16px;
   }
 
   section:not(.categoria) > img {
@@ -114,6 +135,14 @@ footer p {
 
   article.categoria__produto {
     flex: 0 1 50%;
+  }
+
+  .institucional .institucional__header {
+    flex: 1 1 30%;
+  }
+
+  .institucional .institucional__content {
+    flex: 1 0 70%;
   }
 
   .banner-middle {
