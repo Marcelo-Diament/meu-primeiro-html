@@ -376,16 +376,15 @@ section,
   background-color: var(--white);
   display         : flex;
   flex            : 1 1 100%;
-  flex-flow       : row nowrap;
+  flex-flow       : column nowrap;
   justify-content : space-between;
   margin          : 16px;
   padding         : 16px;
 }
 
 .institucional__content .content__img-container {
-  margin-right: 16px;
-  overflow    : hidden;
-  width       : 33%;
+  overflow: hidden;
+  margin  : 0 auto 16px;
 }
 
 .institucional__content .content__img {
@@ -494,6 +493,16 @@ footer p {
 
   .vitrine__produto {
     flex: 0 1 calc(50% - 32px);
+  }
+
+  .institucional__content {
+    flex-flow: row nowrap;
+  }
+
+  .institucional__content .content__img-container {
+    margin   : 0 16px 0 0;
+    min-width: 240px;
+    width    : 33%;
   }
 }
 
