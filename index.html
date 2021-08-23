@@ -5,100 +5,199 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Primeiro HTML</title>
-  <meta name="description" content="Prática 01 do módulo de HTML e CSS">
+  <title>Prática HTML e CSS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@600&family=Poppins&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <style>
-    strong {
-      font-weight: 400
-    }
-  </style>
 </head>
 
 <body>
   <header>
-    <a id="logoTopo" href="/" rel="noopener noreferrer" target="_blank" title="Ir para homepage">
-      <img src="https://mk0leanfrontierqpi7o.kinstacdn.com/wp-content/uploads/2018/12/logo-placeholder-png.png" alt="Site Farmácia e Cia." width="80" height="auto">
+    <a href="index.html" title="Acessar página inicial">
+      <img src="assets/img/logo.png" alt="YourBrand S/A">
     </a>
     <nav>
       <ul>
-        <li>
-          <a href="sobre.html" title="Saiba mais sobre a Farmácia e Cia.">Sobre</a>
-        </li>
-        <li>
-          <a href="contato.html" title="Entre em contato com a Farmácia e Cia.">Contato</a>
-        </li>
+        <li><a href="index.html" title="Acessar página inicial">Início</a></li>
+        <li><a href="sobre.html" title="Acessar página Sobre">Sobre</a></li>
+        <li><a href="contato.html" title="Acessar página Contato">Contato</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
-    <h1>FARMÁCIA E CIA.</h1>
-    <section class="categoria">
-      <h2>BELEZA</h2>
-      <article class="categoria__produto">
-        <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
-        <h3>Máquina de Cabelo</h3>
-        <p>Essa <strong>maquininha de cabelo</strong> está apenas <b>R$ 5,00</b>. Detalhe: ela <strong>não machuca seu couro cabeludo</strong>.<a href="#top">VOLTAR PARA TOPO</a>. <span>Estou dentro de um span.</span></p>
-        <button class="btn">Comprar</button>
-      </article>
-
-
-      <article class="categoria__produto categoria__produto--promocao" data-badge="FRETE FREE">
-        <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
-        <h3>Peruca</h3>
-        <p>Essa <strong>peruca</strong> está apenas <b>R$ 15,00</b>. Detalhe: ela <strong>nem parece de mentira</strong>.</p>
-        <button class="btn">Comprar</button>
-      </article>
-
-      <article class="categoria__produto">
-        <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
-        <h3>Unhas Postiças</h3>
-        <p>Essa <strong>unha postiça</strong> está apenas <b>R$ 1,00</b>. Detalhe: ela é tão <strong>realista</strong> que já vem encravada.</p>
-        <button class="btn">Comprar</button>
-      </article>
+    <section id="topBanner" class="banner banner--top">
+      <div class="banner-top__container banner-top__container--img">
+        <img
+          src="https://i0.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/04/Download-Flat-Design-Abstract.jpg"
+          alt="" width="100%" height="auto" class="banner__img">
+      </div>
+      <div class="banner-top__container">
+        <h1 class="banner__title">Top Banner</h1>
+        <p class="banner__description">Lorem ipsum dolor est SEM JUROS!</p>
+        <a href="produto-x.html" class="banner__btn btn">Saiba Mais</a>
+      </div>
     </section>
 
-    <section class="banner-middle">
-      <a href="/promocoes" title="Saiba mais">
-        <div>
-          <h3>PROMOÇÃO!!!</h3>
-          <button class="btn">Comprar</button>
+    <section class="vitrine">
+      <h2 class="vitrine__title">Mais populares</h2>
+      <article class="vitrine__produto vitrine__produto--promo">
+        <div class="produto__img-container">
+          <img
+            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200132/96214360-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
+            alt="Produto A" width="100%" height="auto" class="produto__img">
         </div>
-      </a>
+        <h3 class="produto__title">Produto A</h3>
+        <p class="produto__description">Lorem ipsum, lorem ipsum dolor.</p>
+        <a href="produto-x.html" class="produto__btn btn">Detalhes</a>
+      </article>
+      <article class="vitrine__produto">
+        <div class="produto__img-container">
+          <img src="https://i.pinimg.com/736x/b9/5e/73/b95e737ba19430948e16a5007f0ab5d4.jpg" alt="Produto B"
+            width="100%" height="auto" class="produto__img">
+        </div>
+        <h3 class="produto__title">Produto B</h3>
+        <p class="produto__description">Lorem sit, lorem lorem.</p>
+        <a href="produto-x.html" class="produto__btn btn">Detalhes</a>
+      </article>
+      <article class="vitrine__produto">
+        <div class="produto__img-container">
+          <img
+            src="https://media.istockphoto.com/vectors/modern-abstract-art-design-with-organic-shapes-vector-id1148997713?k=6&m=1148997713&s=612x612&w=0&h=tq6f_JjmTxLw9ZwleI_orUbW5DrtMEnh04JmSLEVryA="
+            alt="Produto C" width="100%" height="auto" class="produto__img">
+        </div>
+        <h3 class="produto__title">Produto C</h3>
+        <p class="produto__description">Lorem sit, lorem ipsum sit lorem dolor.</p>
+        <a href="produto-x.html" class="produto__btn btn">Detalhes</a>
+      </article>
+      <article class="vitrine__produto">
+        <div class="produto__img-container">
+          <img src="https://i.pinimg.com/originals/14/8e/2b/148e2b9f62b472bbf42b3540587ace9c.jpg" alt="Produto D"
+            width="100%" height="auto" class="produto__img">
+        </div>
+        <h3 class="produto__title">Produto D</h3>
+        <p class="produto__description">Lorem ipsum dolor sit, lorem ipsum dolor sit lorem ipsum dolor.</p>
+        <a href="produto-x.html" class="produto__btn btn">Detalhes</a>
+      </article>
+      <article class="vitrine__produto empty-flex-item"></article>
+      <article class="vitrine__produto empty-flex-item"></article>
+      <article class="vitrine__produto empty-flex-item"></article>
     </section>
 
-    <section class="categoria">
-      <h2>SAÚDE</h2>
-
-      <article class="categoria__produto categoria__produto--promocao" data-badge="OFF">
-        <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
-        <h3>Vitamina Omega 2</h3>
-        <p>Essa <strong>vitamina Omega 2</strong> está apenas <b>R$ 500,00</b>. Detalhe: é <strong>Omega 2 do bom</strong>.</p>
-        <button class="btn">Comprar</button>
+    <section id="middleBanner" class="banner banner--middle">
+      <article class="banner__inner-container">
+        <h2 class="banner__title">Middle Banner</h2>
+        <p class="banner__description">Lorem ipsum dolor est SEM JUROS!</p>
+        <a href="produto-x.html" class="banner__btn btn">Saiba Mais</a>
       </article>
+    </section>
 
-      <article class="categoria__produto">
-        <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
-        <h3>Iogurteira Top Therme</h3>
-        <p>Essa <strong>Iogurteira Top Therme</strong> está apenas <b>R$ 15,00</b>. Detalhe: ela faz um <strong>iogurte delicioso</strong>.</p>
-        <button class="btn">Comprar</button>
+    <section class="vitrine">
+      <h2 class="vitrine__title">Sugestões para Você</h2>
+      <article class="vitrine__produto">
+        <div class="produto__img-container">
+          <img
+            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200128/96214357-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
+            alt="Produto W" width="100%" height="auto" class="produto__img">
+        </div>
+        <h3 class="produto__title">Produto W</h3>
+        <p class="produto__description">Lorem ipsum, lorem ipsum dolor.</p>
+        <a href="produto-x.html" class="produto__btn btn">Detalhes</a>
       </article>
+      <article class="vitrine__produto vitrine__produto--promo">
+        <div class="produto__img-container">
+          <img
+            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200131/96214359-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
+            alt="Produto X" width="100%" height="auto" class="produto__img">
+        </div>
+        <h3 class="produto__title">Produto X</h3>
+        <p class="produto__description">Lorem sit, lorem lorem.</p>
+        <a href="produto-x.html" class="produto__btn btn">Detalhes</a>
+      </article>
+      <article class="vitrine__produto">
+        <div class="produto__img-container">
+          <img src="https://i.pinimg.com/originals/14/8e/2b/148e2b9f62b472bbf42b3540587ace9c.jpg" alt="Produto Y"
+            width="100%" height="auto" class="produto__img">
+        </div>
+        <h3 class="produto__title">Produto Y</h3>
+        <p class="produto__description">Lorem sit, lorem ipsum sit lorem dolor.</p>
+        <a href="produto-x.html" class="produto__btn btn">Detalhes</a>
+      </article>
+      <article class="vitrine__produto">
+        <div class="produto__img-container">
+          <img
+            src="https://www.picclickimg.com/d/l400/pict/224381833924_/Arthouse-Retro-House-Malmo-Orange-Wallpaper-902301.jpg"
+            alt="Produto Z" width="100%" height="auto" class="produto__img">
+        </div>
+        <h3 class="produto__title">Produto Z</h3>
+        <p class="produto__description">Lorem ipsum dolor sit, lorem ipsum dolor sit lorem ipsum dolor.</p>
+        <a href="produto-x.html" class="produto__btn btn">Detalhes</a>
+      </article>
+      <article class="vitrine__produto empty-flex-item"></article>
+      <article class="vitrine__produto empty-flex-item"></article>
+      <article class="vitrine__produto empty-flex-item"></article>
+    </section>
 
-      <article class="categoria__produto">
-        <img src="assets/img/produto-generico.jpg" alt="Imagem de marcação" width="auto" height="240">
-        <h3>Pente para Careca</h3>
-        <p>Esse <strong>pente pra careca</strong> está apenas <b>R$ 10,00</b>. Detalhe: ele <strong>deixa seu cabelo tipo Slash</strong>.</p>
-        <button class="btn">Comprar</button>
+    <section id="bottomBanner" class="banner banner--bottom">
+      <article class="banner__inner-container">
+        <h2 class="banner__title">Bottom Banner</h2>
+        <p class="banner__description">Lorem ipsum dolor est SEM JUROS!</p>
+        <a href="produto-x.html" class="banner__btn btn">Saiba Mais</a>
       </article>
     </section>
   </main>
-
   <footer>
-    <p>Farmácia e Cia. <sup>&copy;</sup> | Desde 1899</p>
+    <section class="footer__main">
+      <arcticle class="footer__list">
+        <h5 class="list__title">Institucional</h5>
+        <ul class="list__content">
+          <li class="list__item">
+            <a href="sobre.html">Sobre</a>
+          </li>
+          <li class="list__item">
+            <a href="contato.html">Contato</a>
+          </li>
+          <li class="list__item"></li>
+          <a href="politicas.html">Políticas</a>
+          </li>
+        </ul>
+      </arcticle>
+      <arcticle class="footer__list">
+        <h5 class="list__title">Departamento A-D</h5>
+        <ul class="list__content">
+          <li class="list__item">
+            <a href="/produtos/produto-a">Categoria A</a>
+          <li class="list__item">
+            <a href="/produtos/produto-b">Categoria B</a>
+          </li>
+          <li class="list__item">
+            <a href="/produtos/produto-c">Categoria C</a>
+          </li>
+          <li class="list__item">
+            <a href="/produtos/produto-d">Categoria D</a>
+          </li>
+        </ul>
+      </arcticle>
+      <arcticle class="footer__list">
+        <h5 class="list__title">Departamento W-Z</h5>
+        <ul class="list__content">
+          <li class="list__item">
+            <a href="/produtos/produto-a">Categoria W</a>
+          <li class="list__item">
+            <a href="/produtos/produto-b">Categoria X</a>
+          </li>
+          <li class="list__item">
+            <a href="/produtos/produto-c">Categoria Y</a>
+          </li>
+          <li class="list__item">
+            <a href="/produtos/produto-d">Categoria Z</a>
+          </li>
+        </ul>
+      </arcticle>
+    </section>
+    <p>YourBrand S/A<sup>&copy;</sup></p>
   </footer>
 </body>
 

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre | Prática HTML e CSS</title>
+  <title>Contato | Prática HTML e CSS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -42,7 +42,10 @@
     </section>
 
     <section class="vitrine">
-      <h2 class="vitrine__title">Sobre</h2>
+      <h2 class="vitrine__title">Contato</h2>
+
+      <article class="vitrine__produto empty-flex-item"></article>
+
       <article class="vitrine__produto vitrine__produto--promo">
         <div class="produto__img-container">
           <img
@@ -64,60 +67,22 @@
       </article>
 
       <article class="vitrine__produto vitrine__produto--promo">
-        <div class="produto__img-container">
-          <img
-            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200132/96214360-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
-            alt="Produto A" width="100%" height="auto" class="produto__img">
-        </div>
-        <h3 class="produto__title">Missão</h3>
-        <p>Foco na missão. #missaoSecreta</p>
-      </article>
-
-      <article class="vitrine__produto vitrine__produto--promo">
-        <div class="produto__img-container">
-          <img
-            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200132/96214360-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
-            alt="Produto A" width="100%" height="auto" class="produto__img">
-        </div>
-        <h3 class="produto__title">Visão</h3>
-        <p>Sangue nozóio. #visaoDeLongoAlcance</p>
-      </article>
-
-      <article class="vitrine__produto vitrine__produto--promo">
-        <div class="produto__img-container">
-          <img
-            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200132/96214360-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
-            alt="Produto A" width="100%" height="auto" class="produto__img">
-        </div>
-        <h3 class="produto__title">Valores</h3>
-        <p>Vale a pena. #poucas</p>
+        <h3 class="produto__title">Formulário de Contato</h3>
+        <p>Preencha o formulário e nós responderemos o quanto antes.</p>
+        <form action="">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+          <label for="sobrenome">Sobresobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome">
+          <label for="email">e-mail</label>
+          <input type="text" id="email" name="email">
+          <button>Enviar</button>
+        </form>
       </article>
 
       <article class="vitrine__produto empty-flex-item"></article>
       <article class="vitrine__produto empty-flex-item"></article>
       <article class="vitrine__produto empty-flex-item"></article>
-    </section>
-
-    <section class="institucional">
-      <h2 class="institucional__title">Nossa História</h2>
-      <article class="institucional__content">
-        <div class="content__img-container">
-          <img
-            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200128/96214357-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
-            alt="Produto W" width="auto" height="240px" class="content__img">
-        </div>
-        <div class="content__description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat totam rem sequi quibusdam? Quaerat atque
-            necessitatibus dolores, quam esse blanditiis sunt quibusdam nulla inventore, obcaecati non omnis ut optio
-            laborum!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat totam rem sequi quibusdam? Quaerat atque
-            necessitatibus dolores, quam esse blanditiis sunt quibusdam nulla inventore, obcaecati non omnis ut optio
-            laborum!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat totam rem sequi quibusdam? Quaerat atque
-            necessitatibus dolores, quam esse blanditiis sunt quibusdam nulla inventore, obcaecati non omnis ut optio
-            laborum!</p>
-        </div>
-      </article>
     </section>
 
     <section id="middleBanner" class="banner banner--middle">
