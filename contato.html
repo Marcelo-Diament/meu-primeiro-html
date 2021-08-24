@@ -8,9 +8,7 @@
   <title>Contato | Prática HTML e CSS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@600&family=Poppins&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@600&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -30,9 +28,7 @@
   <main>
     <section id="topBanner" class="banner banner--top">
       <div class="banner-top__container banner-top__container--img">
-        <img
-          src="https://i0.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/04/Download-Flat-Design-Abstract.jpg"
-          alt="" width="100%" height="auto" class="banner__img">
+        <img src="https://i0.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/04/Download-Flat-Design-Abstract.jpg" alt="" width="100%" height="auto" class="banner__img">
       </div>
       <div class="banner-top__container">
         <h1 class="banner__title">Top Banner</h1>
@@ -48,9 +44,7 @@
 
       <article class="vitrine__produto vitrine__produto--promo">
         <div class="produto__img-container">
-          <img
-            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200132/96214360-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
-            alt="Produto A" width="100%" height="auto" class="produto__img">
+          <img src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200132/96214360-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg" alt="Produto A" width="100%" height="auto" class="produto__img">
         </div>
         <h3 class="produto__title">Contatos</h3>
         <ul>
@@ -69,13 +63,28 @@
       <article class="vitrine__produto vitrine__produto--promo">
         <h3 class="produto__title">Formulário de Contato</h3>
         <p>Preencha o formulário e nós responderemos o quanto antes.</p>
-        <form action="">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome">
-          <label for="sobrenome">Sobresobrenome</label>
-          <input type="text" id="sobrenome" name="sobrenome">
+        <form action="obrigado.html" enctype="multipart/form-data" method="GET">
+          <input type="hidden" name="estouEscondido">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="COLOCA SEU NOME AÍ RAPÁ" autofocus required>
+          <label for="url">Seu site</label>
+          <input type="url" name="url" id="url">
+          <label for="color">Cor Favorita</label>
+          <input type="color" name="color" id="color">
+          <label for="idade">Idade</label>
+          <input type="number" id="idade" name="idade" min="18" max="100" step="1">
+          <label for="nascimento">Data e Hora de Nascimento</label>
+          <input type="datetime-local" id="nascimento" name="nascimento">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone">
           <label for="email">e-mail</label>
-          <input type="text" id="email" name="email">
+          <input type="email" id="email" name="email" required>
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha">
+          <label for="foto">Foto 3x4</label>
+          <input type="file" id="foto" name="foto" accept="image/png">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10" required maxlength="120" minlength="2" wrap="soft"></textarea>
           <button>Enviar</button>
         </form>
       </article>
@@ -97,9 +106,7 @@
       <h2 class="vitrine__title">Sugestões para Você</h2>
       <article class="vitrine__produto">
         <div class="produto__img-container">
-          <img
-            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200128/96214357-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
-            alt="Produto W" width="100%" height="auto" class="produto__img">
+          <img src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200128/96214357-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg" alt="Produto W" width="100%" height="auto" class="produto__img">
         </div>
         <h3 class="produto__title">Produto W</h3>
         <p class="produto__description">Lorem ipsum, lorem ipsum dolor.</p>
@@ -107,9 +114,7 @@
       </article>
       <article class="vitrine__produto vitrine__produto--promo">
         <div class="produto__img-container">
-          <img
-            src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200131/96214359-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg"
-            alt="Produto X" width="100%" height="auto" class="produto__img">
+          <img src="https://previews.123rf.com/images/nadezdagrapes/nadezdagrapes1802/nadezdagrapes180200131/96214359-abstract-floral-seamless-pattern-with-trendy-hand-drawn-textures-modern-abstract-design-for-paper-co.jpg" alt="Produto X" width="100%" height="auto" class="produto__img">
         </div>
         <h3 class="produto__title">Produto X</h3>
         <p class="produto__description">Lorem sit, lorem lorem.</p>
@@ -117,8 +122,7 @@
       </article>
       <article class="vitrine__produto">
         <div class="produto__img-container">
-          <img src="https://i.pinimg.com/originals/14/8e/2b/148e2b9f62b472bbf42b3540587ace9c.jpg" alt="Produto Y"
-            width="100%" height="auto" class="produto__img">
+          <img src="https://i.pinimg.com/originals/14/8e/2b/148e2b9f62b472bbf42b3540587ace9c.jpg" alt="Produto Y" width="100%" height="auto" class="produto__img">
         </div>
         <h3 class="produto__title">Produto Y</h3>
         <p class="produto__description">Lorem sit, lorem ipsum sit lorem dolor.</p>
@@ -126,9 +130,7 @@
       </article>
       <article class="vitrine__produto">
         <div class="produto__img-container">
-          <img
-            src="https://www.picclickimg.com/d/l400/pict/224381833924_/Arthouse-Retro-House-Malmo-Orange-Wallpaper-902301.jpg"
-            alt="Produto Z" width="100%" height="auto" class="produto__img">
+          <img src="https://www.picclickimg.com/d/l400/pict/224381833924_/Arthouse-Retro-House-Malmo-Orange-Wallpaper-902301.jpg" alt="Produto Z" width="100%" height="auto" class="produto__img">
         </div>
         <h3 class="produto__title">Produto Z</h3>
         <p class="produto__description">Lorem ipsum dolor sit, lorem ipsum dolor sit lorem ipsum dolor.</p>
